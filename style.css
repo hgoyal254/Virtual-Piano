@@ -1,0 +1,64 @@
+body{
+    background-color: aqua;
+}
+.box{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 90px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.leftCorner{
+    border-radius: 0px 0px 0px 100px;
+}
+
+.rightCorner{
+    border-radius: 0px 0px 100px 0px;
+}
+
+.black p{
+    color: white;
+}
+
+.piano{
+    display: flex;
+}
+
+.key{
+    height: calc(var(--width) * 4);
+    width: var(--width);
+}
+
+.black{
+    --width: 60px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+}
+
+.white{
+    --width: 100px;
+    border: 1px solid #333;
+    background-color: white;
+}
+
+.white.active {
+    background-color: #cccccc;
+}
+
+.black.active {
+    background-color: gray;
+}
